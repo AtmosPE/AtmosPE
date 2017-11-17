@@ -1,0 +1,59 @@
+#Apollo Advanced Configuration File
+
+#Version of this file
+config:
+ version: 1
+ 
+ nether:
+ #Choose if the nether is allowed. The level of nether will generate automatically
+ allow-nether: true
+ #The name of nether's level
+ level-name: "nether"
+
+ender:
+ allow-ender: true
+ level-name: "ender"
+ 
+ #DISCLAIMER: WE DO NOT SUPPORT ALL OPTIONS UNDER 'incompatible-plugins'.
+ #DO NOT REPORT ANY BUGS BEFORE MAKING SURE IT DOESN'T RESULT OUT OF THIS OPTION!
+ #Most old plugins crash the server (maybe even segfaults), and can corrupt your savefiles.
+ developer:
+  #This setting allows the server to load plugins through the source directory over a .phar file
+  #Recommended that it stays "false"
+  folder-plugin-loader: false
+  #This setting allows the server to load plugins with Incompatible API
+  #Recommanded that it stays "false"
+  load-incompatible-api: false
+ 
+updater:
+ #Branch which will be used by the updater of /updateserver
+ branch: "master"
+ 
+#mob ai coming soon for now not working
+ai:
+ #AI switch
+ enable: false
+ #Zombie'AI，0=disabled，1=AI 1.0ver，2=new AI(Faultiness)
+ zombie: 1
+ #PigZombie's AI
+ pigzombie: true
+ #the AI of cow and mushroom cow
+ cow: true
+ #Chicken's AI
+ chicken: true
+ #Sheep's AI
+ sheep: true
+ #Pigs' AI
+ pig: true
+ #Skeleton's AI
+ skeleton: true
+ #Creeper's AI
+ creeper: true
+ #Iron golem's AI
+ iron-golem: true
+ #Snow golem's AI
+ snow-golem: true
+ #Destory blocks if creeper exploded
+ creeper-explode-destroy-block: false
+ #Choose if allow mob auto generate
+ mobgenerate: false
